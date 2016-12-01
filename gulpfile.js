@@ -6,6 +6,7 @@ var merge = require('merge2');
 var tSrc = 'src/**/*.ts';
 var dest = 'release/';
 
+
 gulp.task('ts2js',function(){
     var tsResult = gulp.src(tSrc)
     .pipe(ts({
