@@ -1,4 +1,11 @@
+module System{
+    export class out{
+        static println(str){
+            document.getElementById('msg').innerText = str;
+        }
+    }
+}
+
 window.onload =()=>{
-    var clock = new time.Clock();
-    document.getElementById('time').innerText  = clock.getTime();
+    AbstractDemo.main(null);
 }
