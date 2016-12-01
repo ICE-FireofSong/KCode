@@ -1,13 +1,3 @@
-abstract class Animal {
-    sex: string;
-    age: number;
-    abstract yell(): string;
-    constructor(sex: string, age: number) {
-        this.sex = sex;
-        this.age = age;
-    }
-}
-
 class AbstractDemo {
     public static main(args: string[]): void {
         var cat = new Cat('girl',16);
@@ -24,6 +14,16 @@ class AbstractDemo {
         System.out.println(str);
     }
 
+}
+
+abstract class Animal {
+    sex: string;
+    age: number;
+    abstract yell(): string;
+    constructor(sex: string, age: number) {
+        this.sex = sex;
+        this.age = age;
+    }
 }
 
 class Cat extends Animal {
