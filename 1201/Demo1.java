@@ -8,13 +8,13 @@ class Outer
     int num = 4;
     void method()
     {
-    new Demo()
-    {
-        void show()
+        new Demo()
         {
-            System.out.print("................"+num);
-        }
-    }.show();
+            void show()
+            {
+                System.out.print("................"+num);
+            }
+        }.show();
     }
 }
 class Demo1
@@ -22,5 +22,13 @@ class Demo1
     public static void main(String[] args)
     {   
         new Outer().method();
+        
+        Demo d = new Demo(){
+            int num = 4;
+            void show(){
+                System.out.print("................"+num);
+            }
+        };
+        d.show();
     }
 }
