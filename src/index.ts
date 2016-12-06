@@ -1,3 +1,4 @@
+//= System.out.println
 module System{
     export class out{
         static println(str){
